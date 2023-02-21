@@ -1,5 +1,4 @@
 #include "Contact.hpp"
-#include "PhoneBook_utils.hpp"
 
 class	PhoneBook
 {
@@ -13,3 +12,5 @@ class	PhoneBook
 		void	_print(Contact contact);
 
 };
+
+void	ft_print_add(PhoneBook book, std::string name);

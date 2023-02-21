@@ -2,6 +2,8 @@
 
 PhoneBook::PhoneBook(void)
 {
+	this->_index = 0;
+	std::cout << "Welcome to PhoneBook!!" << std::endl;
 }
 
 PhoneBook::~PhoneBook(void)
@@ -24,5 +26,9 @@ void	PhoneBook::_search(void)
 
 void	PhoneBook::_print(Contact contact)
 {
-	
+	std::cout << "first name: " << contact.get_fname() << std::endl;
+	std::cout << "last name: " << contact.get_lname() << std::endl;
+	std::cout << "nickname: " << contact.get_nname() << std::endl;
+	std::cout << "phone number: " << contact.get_pnum() << std::endl;
+	std::cout << "darkest secret: " << contact.get_dsec() << std::endl;
 }

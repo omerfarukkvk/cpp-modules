@@ -1,4 +1,4 @@
-SRCS	=	Contact.cpp PhoneBook.cpp main.cpp
+SRCS	=	Contact.cpp PhoneBook.cpp main.cpp PhoneBook_utils.cpp
 
 NAME	=	PhoneBook
 CC		=	c++
@@ -10,7 +10,7 @@ $(NAME) :
 	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
 
 clean	:
-	rm -rf ($NAME)
+	rm -rf $(NAME)
 
 fclean	:	clean
 

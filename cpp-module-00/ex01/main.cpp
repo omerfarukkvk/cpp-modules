@@ -21,6 +21,8 @@ int main(void)
 		if (str == "ADD")
 		{
 			book._add(book);
+			book._print(book._contactArray[book._index]);
+			book._index++;
 		}
 		else if (str == "SEARCH")
 		{

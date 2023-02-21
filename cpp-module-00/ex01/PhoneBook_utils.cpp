@@ -4,9 +4,9 @@ void	ft_print_add(PhoneBook book, std::string name)
 {
 	std::string str;
 
-	std::cout << "Please enter" << name << ": ";
+	std::cout << GREEN "Please enter " << name << ": " RST;
 	std::cin >> str;
-	if (str == "")
+	if (str.size() == 0)
 	{
 		std::cout << RED "Cannot be empty!!" RST << std::endl;
 		ft_print_add(book, name);
@@ -21,5 +21,4 @@ void	ft_print_add(PhoneBook book, std::string name)
 		book._contactArray[book._index].set_pnum(str);
 	else if (name == "darkest secret")
 		book._contactArray[book._index].set_dsec(str);
-	
 }
