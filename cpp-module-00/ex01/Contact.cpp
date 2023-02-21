@@ -28,6 +28,11 @@ std::string		Contact::get_pnum(void) const
 	return  (this->_pnum);
 }
 
+std::string		Contact::get_dsec(void) const
+{
+	return  (this->_dsec);
+}
+
 void			Contact::set_fname(std::string str)
 {
 	this->_fname = str;
@@ -46,4 +51,9 @@ void			Contact::set_nname(std::string str)
 void			Contact::set_pnum(std::string str)
 {
 	this->_pnum = str;
+}
+
+void			Contact::set_dsec(std::string str)
+{
+	this->_dsec = str;
 }

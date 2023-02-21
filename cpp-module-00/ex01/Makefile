@@ -1,9 +1,19 @@
-SRCS	= Contact.cpp PhoneBook.cpp main.cpp
+SRCS	=	Contact.cpp PhoneBook.cpp main.cpp
 
-NAME	= PhoneBook
-CC		= c++
-CFLAGS	= -Wall -Werror -Wextra -std=c++98
+NAME	=	PhoneBook
+CC		=	c++
+CFLAGS	=	-Wall -Werror -Wextra -std=c++98
 
 all		: $(NAME)
 
-$(NAME) : 
+$(NAME) :
+	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
+
+clean	:
+	rm -rf ($NAME)
+
+fclean	:	clean
+
+re		:	fclean all
+
+.PHONY	:	clean fclean re

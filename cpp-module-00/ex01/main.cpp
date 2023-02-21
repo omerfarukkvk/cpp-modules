@@ -11,6 +11,7 @@ void	print_cmd()
 
 int main(void)
 {
+	PhoneBook	book;
 	std::string	str;
 
 	while (1)
@@ -18,7 +19,13 @@ int main(void)
 		std::cout << GREEN "Please enter command: " RST;
 		std::getline(std::cin, str);
 		if (str == "ADD")
-			std::cout <<"selam" << std::endl;
+		{
+			book._add(book);
+		}
+		else if (str == "SEARCH")
+		{
+
+		}
 		else if (str == "EXIT")
 			exit (1);
 		else

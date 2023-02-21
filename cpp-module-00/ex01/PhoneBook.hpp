@@ -1,12 +1,14 @@
 #include "Contact.hpp"
+#include "PhoneBook_utils.hpp"
 
 class	PhoneBook
 {
-	Contact		_contactArray[8];
 	public:
+		Contact		_contactArray[8];
+		int			_index;
 		PhoneBook(void);
 		~PhoneBook(void);
-		void	_add(void);
+		void	_add(PhoneBook book);
 		void	_search(void);
 		void	_print(Contact contact);
 
