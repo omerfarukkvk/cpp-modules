@@ -35,25 +35,25 @@ std::string		Contact::get_dsec(void) const
 
 void			Contact::set_fname(std::string str)
 {
-	this->_fname = str;
+	_fname = str;
 }
 
 void			Contact::set_lname(std::string str)
 {
-	this->_lname = str;
+	_lname = str;
 }
 
 void			Contact::set_nname(std::string str)
 {
-	this->_nname = str;
+	_nname = str;
 }
 
 void			Contact::set_pnum(std::string str)
 {
-	this->_pnum = str;
+	_pnum = str;
 }
 
 void			Contact::set_dsec(std::string str)
 {
-	this->_dsec = str;
+	_dsec = str;
 }
