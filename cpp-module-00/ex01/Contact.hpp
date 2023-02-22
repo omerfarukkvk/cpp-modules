@@ -10,11 +10,12 @@
 
 class	Contact
 {
-	std::string	_fname;
-	std::string	_lname;
-	std::string	_nname;
-	std::string	_pnum;
-	std::string	_dsec;
+	private:
+		std::string	_fname;
+		std::string	_lname;
+		std::string	_nname;
+		std::string	_pnum;
+		std::string	_dsec;
 	public:
 		Contact(void);
 		~Contact(void);
@@ -23,11 +24,11 @@ class	Contact
 		std::string get_nname(void) const;
 		std::string get_pnum(void) const;
 		std::string get_dsec(void) const;
-		void		set_fname(std::string str);
-		void		set_lname(std::string str);
-		void		set_nname(std::string str);
-		void		set_pnum(std::string str);
-		void		set_dsec(std::string str);
+		void		set_fname(std::string _fname);
+		void		set_lname(std::string _lname);
+		void		set_nname(std::string _nname);
+		void		set_pnum(std::string _pnum);
+		void		set_dsec(std::string _dsec);
 };
 
 #endif

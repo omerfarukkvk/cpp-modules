@@ -1,6 +1,6 @@
 #include "PhoneBook.hpp"
 
-void	ft_print_add(PhoneBook book, std::string name)
+PhoneBook	ft_set_add(PhoneBook book, std::string name)
 {
 	std::string str;
 
@@ -9,10 +9,8 @@ void	ft_print_add(PhoneBook book, std::string name)
 	while (!(str.size() > 0))
 	{
 		std::cout << RED "Cannot be empty!!" RST << std::endl;
-		ft_print_add(book, name);
+		ft_set_add(book, name);
 	}
-	std::cout << str << std::endl;
-	std::cout << str.size() << std::endl;
 	if (name == "first name")
 		book._contactArray[book._index].set_fname(str);
 	else if (name == "last name")
@@ -23,4 +21,5 @@ void	ft_print_add(PhoneBook book, std::string name)
 		book._contactArray[book._index].set_pnum(str);
 	else if (name == "darkest secret")
 		book._contactArray[book._index].set_dsec(str);
+	return (book);
 }

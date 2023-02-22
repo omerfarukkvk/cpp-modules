@@ -33,27 +33,27 @@ std::string		Contact::get_dsec(void) const
 	return  (this->_dsec);
 }
 
-void			Contact::set_fname(std::string str)
+void			Contact::set_fname(std::string _fname)
 {
-	_fname = str;
+	this->_fname = _fname;
 }
 
-void			Contact::set_lname(std::string str)
+void			Contact::set_lname(std::string _lname)
 {
-	_lname = str;
+	this->_lname = _lname;
 }
 
-void			Contact::set_nname(std::string str)
+void			Contact::set_nname(std::string _nname)
 {
-	_nname = str;
+	this->_nname = _nname;
 }
 
-void			Contact::set_pnum(std::string str)
+void			Contact::set_pnum(std::string _pnum)
 {
-	_pnum = str;
+	this->_pnum = _pnum;
 }
 
-void			Contact::set_dsec(std::string str)
+void			Contact::set_dsec(std::string _dsec)
 {
-	_dsec = str;
+	this->_dsec = _dsec;
 }

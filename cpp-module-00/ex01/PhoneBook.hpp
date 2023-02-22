@@ -13,4 +13,4 @@ class	PhoneBook
 
 };
 
-void	ft_print_add(PhoneBook book, std::string name);
+PhoneBook	ft_set_add(PhoneBook book, std::string name);
