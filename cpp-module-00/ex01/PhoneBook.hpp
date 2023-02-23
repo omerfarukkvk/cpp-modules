@@ -7,9 +7,9 @@ class	PhoneBook
 		int			_index;
 		PhoneBook(void);
 		~PhoneBook(void);
-		void	_add(PhoneBook book);
+		PhoneBook	_add(PhoneBook book);
 		void	_search(void);
-		void	_print(Contact contact);
+		void	_print(PhoneBook book);
 
 };
 

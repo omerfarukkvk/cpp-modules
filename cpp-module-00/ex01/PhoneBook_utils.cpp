@@ -5,8 +5,8 @@ PhoneBook	ft_set_add(PhoneBook book, std::string name)
 	std::string str;
 
 	std::cout << GREEN "Please enter " << name << ": " RST;
-	std::cin >> str;
-	while (!(str.size() > 0))
+	std::getline(std::cin, str);
+	if (str == "")
 	{
 		std::cout << RED "Cannot be empty!!" RST << std::endl;
 		ft_set_add(book, name);

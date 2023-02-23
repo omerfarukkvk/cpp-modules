@@ -20,12 +20,16 @@ int main(void)
 		std::getline(std::cin, str);
 		if (str == "ADD")
 		{
-			book._add(book);
-			book._index++;
+			if (book._index == 8)
+			{
+				std::cout << RED "PhoneBook is full!!" RST << std::endl;
+				std::cout << RED "If you add a new contact, the latest one will be deleted." RST << std::endl;
+			}
+			book = book._add(book);
 		}
 		else if (str == "SEARCH")
 		{
-			book._print(book._contactArray[book._index - 1]);
+			book._print(book);
 		}
 		else if (str == "EXIT")
 			exit (1);
